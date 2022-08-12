@@ -1,10 +1,40 @@
 from Modulos import *
-from Listas import *
                                 
 root = tk.Tk()                          #Definindo root do sistema 
 root.overrideredirect(True)             #Fazendo com que a barra superior desapareça
 pc = 0                                  #Variavel para numero de vitórias do computador
 vc = 0                                  #Variavel para numero de vitórias do usuário
+
+get_dir = os.path.dirname(__file__)     #Pegando diretorio do arquivo
+#Lista de cores
+cores = [
+    "white",    #cores[0]
+    "black",    #cores[1]
+    "#A9A9A9"   #cores[2]
+]
+
+#Lista de Imagens
+tesoura = PhotoImage(file= fr"{get_dir}\Botões\Tesoura.png")    #Diretorio da imagem
+fechar = PhotoImage(file= fr"{get_dir}\Botões\Fechar.png")      #Diretorio da imagem
+papel = PhotoImage(file= fr"{get_dir}\Botões\Papel.png")        #Diretorio da imagem
+pedra = PhotoImage(file= fr"{get_dir}\Botões\Pedra.png")        #Diretorio da imagem
+imagem = [
+    tesoura,    #imagem[0]
+    fechar,     #imagem[1]
+    papel,      #imagem[2]
+    pedra       #imagem[3]
+]
+
+#Lista de Fontes
+fonte1 = tkFont.Font(family="Arial", size=16, weight="bold", slant="italic")    #Definindo padrão de fonte
+fonte1_1 = tkFont.Font(family="Arial", size=35, weight="bold")                  #Definindo padrão de fonte
+fonte1_2 = tkFont.Font(family="Arial", size=20, weight="bold")                  #Definindo padrão de fonte
+
+fontes = [
+    fonte1,     #fontes[0]
+    fonte1_1,   #fontes[1]
+    fonte1_2    #fontes[2]
+    ]
 
 def center(win):
     win.update_idletasks()
@@ -32,6 +62,7 @@ class Application():
         self.frame()            #função frame() para definição de repartições da tela 
         self.label()            #função label() para textos dentro dos frames e da tela
         self.widgets()          #função widgets() para atribuição de botões no frame
+
         self.root.mainloop()    #termino do root //loop para permanência da tela
 
     def tesoura_command(self):                                          #função comando para opção tesoura
