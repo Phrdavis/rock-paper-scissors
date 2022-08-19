@@ -2,13 +2,12 @@
 
 Let's play rock-paper-scissors :)
 
-This software is basicly a rock-papel-scissors gamy where the player play vs the software program in an simple application.
+Este software é basicamente um jogo de pedra-papel-tesoura onde o jogador joga contra o programa de software em um aplicativo simples.
 
-Having a single screen formulated through the Tkinter module of the Python language, its interface consists of a brief welcome and three buttons, namely rock, paper and scissors.
+Tendo uma única tela formulada através do módulo Tkinter da linguagem Python, sua interface é composta por uma breve saudação e três botões, a saber, pedra, papel e tesoura.
 
-After the user selects and clicks on the desired button, a legend at the bottom appears informing if there was a victory, defeat or tie and the current score of each round, the score being reset each time the program is opened.
+Após o usuário selecionar e clicar no botão desejado, aparece uma legenda na parte inferior informando se houve vitória, derrota ou empate e o placar atual de cada rodada, sendo o placar zerado a cada vez que o programa é aberto.
 
-In more technical parts, the program consists of two separate files, "Pedra, Papel e Tesoura.py" and "Modulos.py", which are, respectively, the main file where all the screen settings are then inside the "Application Class( )", distribution of lists for better maintenance of the project in future changes. The images are also called in a list type variable in this main file. The "Modulos.py" file already refers, as the name implies, to a separate file just for storing the modules used in the project.
+Nas partes mais técnicas, o programa é composto por dois arquivos separados, "Pedra, Papel e Tesoura.py" e "Modulos.py", que são, respectivamente, o arquivo principal onde todas as configurações da tela ficam então dentro da "Application Class( )", distribuição de listas para melhor manutenção do projeto em alterações futuras. As imagens também são chamadas em uma variável do tipo lista neste arquivo principal. O arquivo "Modulos.py" já se refere, como o próprio nome indica, a um arquivo separado apenas para armazenar os módulos utilizados no projeto.
 
-There is also a folder called "Buttons" where the only four images used within the project are stored, namely "Close.png", "Paper.png", "Stone.png" and "Scissors.png". They are called and allocated in the interface through the main file "Pedra, Papel e Scissors.py".
-
+Há também uma pasta chamada "Buttons" onde são armazenadas as únicas quatro imagens usadas dentro do projeto, a saber "Close.png", "Paper.png", "Stone.png" e "Scissors.png". Eles são chamados e alocados na interface através do arquivo principal "Pedra, Papel e Tesoura.py".
